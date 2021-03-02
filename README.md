@@ -1,3 +1,10 @@
+# Base image is used mainly for electron builds
+``` shellsession
+Image: electronuserland/builder:wine
+npm 6.14.6
+node 12.18.3
+```
+
 # kubernetes-npm-proxy-cache
 
 Make `npm install` much faster on your kubernetes deployment, by
