@@ -1,4 +1,4 @@
-# Base image is used mainly for electron builds
+# Image, NPM, node versions
 ``` shellsession
 Image: electronuserland/builder:wine
 npm 6.14.6
