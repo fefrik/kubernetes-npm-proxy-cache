@@ -1,5 +1,5 @@
-FROM nodesource/jessie
-MAINTAINER Julien 'Lta' BALLET <contact@lta.io>
+FROM electronuserland/builder:wine 
+MAINTAINER Vladimir 'fefrik' PFEFFER <vladimir.pfeffer@gmail.com>
 
 RUN npm install -g npm-proxy-cache
 
