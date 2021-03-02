@@ -10,7 +10,7 @@ This has been hacked together to make our Jenkins build faster.
 First, deploy the proxy cache on your kubernetes cluster:
 
 ``` shellsession
-$> kubectl apply -f https://github.com/elthariel/kubernetes-npm-proxy-cache/raw/master/npm-proxy-cache.yml
+$> kubectl apply -f https://github.com/fefrik/kubernetes-npm-proxy-cache/raw/master/npm-proxy-cache.yml
 deployment "npm-proxy-cache-deployment" created
 service "npm-proxy-cache-service" created
 ```
