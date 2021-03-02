@@ -31,19 +31,20 @@ $> npm install
 
 ## Local Registry
 Set the local registry first using this command
-
+``` shellsession
 docker run -d -p 5000:5000 --restart=always --name registry registry:2
-
+```
 ## Image Tag
 Given a Dockerfile, the image could be built and tagged this easy way:
-
+``` shellsession
 docker build -t localhost:5000/my-image
-
+```
 ## Image Pull Policy
 the field imagePullPolicy should then be changed to get the right image from the right repo.
 
 given this sample pod template
 
+``` shellsession
 apiVersion: v1
 kind: Pod
 metadata:
@@ -55,7 +56,9 @@ spec:
     - name: app
       image: localhost:5000/my-image
       imagePullPolicy: Never
-Deploy Pod
+```
+
+## Deploy Pod
 The pod can be deployed using:
 
 kubectl create -f pod.yml
